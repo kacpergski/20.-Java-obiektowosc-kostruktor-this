@@ -52,7 +52,32 @@ public class Main {
                     System.out.println("Status: to do");
                     System.out.println();
                 }
+
+
+
             }
         }
+
+        // Zadanie 3
+
+        System.out.println();
+        System.out.println("----------zadanie 3-----------");
+        System.out.println();
+
+        Car car1 = new Car("Fiat",164000.23);
+        Car car2 = new Car("Honda",257000.44);
+        Car car3 = new Car("Mazda", 400345.77);
+
+            Car[] cars=new Car[3];
+        cars[0]=car1;
+        cars[1]=car2;
+        cars[2]=car3;
+
+        for (Car cL: cars){
+            System.out.println("Marka pojazdu: " + cL.brand);
+            System.out.println("Cena pojazdu: " + cL.price);
+            System.out.println();
+        }
+
     }
 }
